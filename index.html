@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ஸ்ரீ Foods - Homestyle Food Catering & Monthly Subscription</title>
+  <meta name="description"
+    content="Authentic homestyle catering and monthly subscription food service. Prepared with love by traditional home-chefs on fresh banana leaves.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles & Fonts (Food Menu Slim Typography & Handwriting) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/home-chef-mom.png" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/kitchen-bg-4k.jpg" fetchpriority="high">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@700&family=Caveat:wght@700&family=Playfair+Display:ital,wght@0,700;1,700;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            handwriting: ['"Caveat"', '"Kalam"', '"Alex Brush"', 'cursive'],
+            tamil: ['Anek Tamil', 'Noto Sans Tamil', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            turmeric: '#f59e0b',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="banana-leaf-bg text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+
+
+  <!-- Top Banner Notice (Clean, no tags) -->
+  <div class="bg-brand-800 text-white text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="font-medium">
+        Authentic South Indian Homestyle Food Catering &amp; Monthly Daily Subscriptions
+      </div>
+      <div class="flex items-center gap-4 text-xs font-semibold">
+        <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-green-300"></i>
+          FSSAI Certified Kitchen</span>
+        <span class="hidden md:flex items-center gap-1"><i data-lucide="message-circle"
+            class="w-3.5 h-3.5 text-green-300"></i> WhatsApp Support Available</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar (Payment buttons removed, clean nav) -->
+  <nav
+    class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-100 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+          <img src="assets/logo-leaf.svg" alt="ஸ்ரீ Foods Logo"
+            class="h-14 sm:h-16 w-auto transition-transform duration-300 group-hover:scale-105">
+        </a>
+
+        <!-- Links -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+          <a href="#hero" class="hover:text-brand-700 transition-colors">Home</a>
+          <a href="#packages" class="hover:text-brand-700 transition-colors">Packages</a>
+          <a href="#reviews" class="hover:text-brand-700 transition-colors">Reviews</a>
+          <a href="#faq" class="hover:text-brand-700 transition-colors">FAQ</a>
+          <a href="#booking-form" class="hover:text-brand-700 transition-colors">Book / Enquire</a>
+          <button onclick="openPaymentDeskDirectly()"
+            class="hover:text-brand-700 transition-colors font-semibold text-slate-700">Payment Page</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Exact Reference Design in Brand Green -->
+  <section id="hero"
+    class="relative overflow-hidden bg-brand-950 text-white min-h-[460px] sm:min-h-[510px] lg:min-h-[550px] flex items-end">
+    <!-- High-Resolution 4K Kitchen Background with Low-Opacity Brand Tint -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
+      style="background-image: url('assets/kitchen-bg-4k.jpg');"></div>
+    <div
+      class="absolute inset-0 bg-brand-950/35 bg-gradient-to-r from-brand-950/60 via-brand-900/30 to-brand-950/45 pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-4 sm:pt-6 pb-0">
+
+      <!-- Top Pill: Simple Plans. Easy Subscription (Slightly brought down) -->
+      <div class="flex justify-end mt-2 sm:mt-4 mb-2 sm:mb-3 pr-1 sm:pr-8">
+        <div
+          class="inline-flex flex-col bg-white text-slate-900 px-4 py-2 sm:px-5 sm:py-2 rounded-2xl shadow-xl text-left border border-white/20 transform translate-y-2 sm:translate-y-3">
+          <span class="text-xs sm:text-sm font-extrabold text-slate-900 leading-tight">Simple Plans.</span>
+          <span class="text-xs sm:text-sm font-bold text-slate-700 leading-tight">Easy Subscription</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative">
+
+        <!-- Left Side: Changed title fully (same genre), yellow animated strike-through on hotel, handwritten home cook, subtext, Explore Plans button -->
+        <div class="lg:col-span-7 space-y-4 text-left pb-6 sm:pb-8">
+
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.16] drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
+            Tired of daily meals from a <br class="hidden sm:inline">
+            <span class="strike-yellow text-white">hotel</span> near you?
+          </h1>
+
+          <!-- Handwritten yellow script font directly under hotel -->
+          <div class="-mt-2 sm:-mt-3 pl-2 sm:pl-3">
+            <span
+              class="font-handwriting text-yellow-300 text-3xl sm:text-4xl lg:text-5xl font-bold -rotate-3 inline-block drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
+              home cook
+            </span>
+          </div>
+
+          <!-- Same Subtitle Text as Reference Image -->
+          <p class="text-base sm:text-lg font-medium text-emerald-100 tracking-wide drop-shadow-sm pt-0.5">
+            Your Daily Home-Cooked Food
+          </p>
+
+          <!-- Explore Plans Pill Button -->
+          <div class="pt-1.5 space-y-2">
+            <a href="#packages"
+              class="inline-flex items-center gap-2 bg-amber-50 hover:bg-white text-slate-900 font-extrabold px-7 py-3 rounded-full text-sm sm:text-base shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
+              <span>Explore Plans</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-900"></i>
+            </a>
+            <div class="text-xs text-emerald-200/90 font-medium pl-1">
+              Freshly cooked daily. Limited slots available.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Big Sized Cutout Lady (Clean Defringed Body Shape with no background) -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end items-end relative self-end">
+          <img id="heroMomPhoto" src="assets/home-chef-mom.png" alt="Sri Lakshmi Home Food - Loving Home Cook Mom"
+            class="w-auto h-auto max-h-[420px] sm:max-h-[490px] lg:max-h-[540px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.65)] pointer-events-none transition-transform duration-300 hover:scale-102">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Verified Ratings Bar (Swiggy & Zomato) -->
+  <section class="bg-white border-y border-brand-100 py-6 px-4 shadow-sm">
+    <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-around gap-6">
+
+      <!-- Swiggy Rating: 4.3 ★ -->
+      <a href="https://www.swiggy.com/city/chennai/sri-lakshmi-homefood-urapakkam-rest1063446" target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-orange-50/50 border border-orange-200/80 hover:border-[#fc8019] hover:shadow-md transition-all hover:scale-105 group"
+        title="View Sri Lakshmi HomeFood on Swiggy">
+        <div
+          class="w-12 h-12 rounded-2xl bg-[#fc8019] flex items-center justify-center p-2.5 shadow-md shadow-orange-500/20 group-hover:scale-110 transition-transform">
+          <svg role="img" viewBox="0 0 24 24" class="w-full h-full fill-white" xmlns="http://www.w3.org/2000/svg">
+            <title>Swiggy</title>
+            <path
+              d="M12.034 24c-.376-.411-2.075-2.584-3.95-5.513-.547-.916-.901-1.63-.833-1.814.178-.48 3.355-.743 4.333-.308.298.132.29.307.29.409 0 .44-.022 1.619-.022 1.619a.441.441 0 1 0 .883-.002l-.005-2.939c0-.255-.278-.319-.331-.329-.511-.002-1.548-.006-2.661-.006-2.457 0-3.006.101-3.423-.172-.904-.591-2.383-4.577-2.417-6.819C3.849 4.964 5.723 2.225 8.362.868A8.13 8.13 0 0 1 12.026 0c4.177 0 7.617 3.153 8.075 7.209l.001.011c.084.981-5.321 1.189-6.39.904-.164-.044-.206-.212-.206-.284L13.5 4.996a.442.442 0 0 0-.884.002l.009 3.866a.33.33 0 0 0 .268.32l3.354-.001c1.79 0 2.542.207 3.042.588.333.254.461.739.349 1.37C18.633 16.755 12.273 23.71 12.034 24z" />
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-slate-900 text-lg sm:text-xl">4.3 ★</span>
+            <span class="text-xs font-bold text-slate-700">on Swiggy</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 text-[#fc8019]"></i>
+          </div>
+          <div class="text-xs text-slate-500 font-medium">
+            Sri Lakshmi HomeFood (Urapakkam) • View Menu
+          </div>
+        </div>
+      </a>
+
+      <div class="hidden sm:block w-px h-10 bg-slate-200"></div>
+
+      <!-- Zomato Rating: 4.2+ ★ -->
+      <a href="https://www.zomato.com/chennai/lakshmi-home-food-guduvanchery/order" target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-rose-50/50 border border-rose-200/80 hover:border-[#e23744] hover:shadow-md transition-all hover:scale-105 group"
+        title="View Lakshmi Home Food on Zomato">
+        <div
+          class="w-12 h-12 rounded-2xl bg-[#e23744] flex items-center justify-center p-2.5 shadow-md shadow-rose-500/20 group-hover:scale-110 transition-transform">
+          <svg role="img" viewBox="0 0 24 24" class="w-full h-full fill-white" xmlns="http://www.w3.org/2000/svg">
+            <title>Zomato</title>
+            <path
+              d="M19.615 9.45l-1.258.473-.167.71-.446.021-.115.978h.408l-.211 1.51c-.131.939.036 1.381.865 1.381.488 0 .91-.175 1.135-.297l.145-.9c-.167.083-.436.19-.618.19-.247 0-.276-.13-.225-.488l.189-1.396h.843c.03-.206.131-.877.16-1h-.865zm-3.779 1.002c-.115.002-.236.01-.361.026a3.592 3.592 0 0 0-1.347.432l.26.789c.269-.15.615-.28.978-.326.538-.066.757.1.79.375.014.109.004.199-.005.289l-.014.056a3.46 3.46 0 0 0-1.097-.036c-.518.063-.943.273-1.204.6a1.324 1.324 0 0 0-.225 1.034c.127.583.553.84 1.199.76.45-.055.812-.27 1.076-.63a2.665 2.665 0 0 1-.03.304 1.74 1.74 0 0 1-.072.29l1.244.001a3.657 3.657 0 0 1-.001-.365c.036-.459.118-1.143.247-2.051a2.397 2.397 0 0 0-.002-.59c-.08-.644-.628-.969-1.436-.958zm6.536.063c-1.194 0-2.107 1.067-2.107 2.342 0 .959.552 1.693 1.628 1.693 1.2 0 2.107-1.067 2.107-2.35 0-.95-.538-1.685-1.628-1.685zm-11.777.041c-.538 0-1.12.465-1.52 1.236.102-.504.08-1.076.051-1.198a8.964 8.964 0 0 1-1.287.122 6.9 6.9 0 0 1-.073 1.243l-.167 1.145c-.066.45-.138.969-.211 1.297h1.353c.007-.199.058-.511.094-.786l.116-.786c.095-.511.502-1.114.815-1.114.182 0 .175.176.124.504l-.131.885c-.066.45-.138.969-.211 1.297h1.367c.008-.199.051-.512.088-.786l.116-.786c.094-.512.502-1.114.814-1.114.182 0 .175.168.146.396l-.327 2.29H13l.438-2.609c.095-.649.044-1.236-.676-1.236-.523 0-1.09.443-1.49 1.182.087-.61.036-1.182-.677-1.182zm-4.88.008c-1.177 0-2.08 1.053-2.08 2.312 0 .946.546 1.67 1.608 1.67 1.185 0 2.08-1.052 2.08-2.319 0-.938-.531-1.663-1.607-1.663zm-5.126.091c-.05.39-.102.778-.175 1.13.328-.008.619-.016 1.411-.016l-1.81 1.96-.015.703c.444-.03.997-.039 1.63-.039.566 0 1.134.008 1.497.039.065-.458.13-.763.21-1.137-.275.015-.755.023-1.512.023l1.81-1.969.023-.694c-.437.023-.83.03-1.52.03-.749 0-.975-.007-1.549-.03zm4.988.927c.255 0 .408.228.408.701 0 .687-.276 1.251-.626 1.251-.261 0-.414-.236-.414-.702 0-.694.283-1.25.632-1.25zm16.629 0c.254 0 .407.228.407.701 0 .687-.276 1.251-.625 1.251-.262 0-.415-.236-.415-.702 0-.694.284-1.25.633-1.25zM15.51 12.64c.206-.003.403.024.55.058l-.013.118c-.075.44-.39.881-.848.938-.31.037-.578-.148-.608-.39a.538.538 0 0 1 .114-.41c.117-.159.336-.268.599-.3.069-.009.138-.013.206-.014Z" />
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-black text-slate-900 text-lg sm:text-xl">4.2+ ★</span>
+            <span class="text-xs font-bold text-slate-700">on Zomato</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 text-[#e23744]"></i>
+          </div>
+          <div class="text-xs text-slate-500 font-medium">
+            Lakshmi Home Food (Guduvanchery) • View Menu
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Packages Section - Only 5 Requested Menu Packages -->
+  <section id="packages" class="py-16 sm:py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight font-serif italic">
+          Our Homestyle Menu
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg mt-3">
+          Fresh traditional cooking with cold-pressed oils and pure ingredients. Order daily single meals or our
+          signature monthly subscription.
+        </p>
+      </div>
+
+      <!-- The 5 Packages Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 1. Only Lunch -->
+        <div
+          class="bg-white rounded-3xl p-6 border-2 border-brand-100 hover:border-brand-500 shadow-lg hover:shadow-xl transition-all relative flex flex-col justify-between group">
+          <div>
+            <div class="relative w-full h-48 sm:h-52 rounded-2xl overflow-hidden mb-4 shadow-sm bg-slate-100">
+              <img src="assets/menu-lunch.jpg" alt="Authentic Chettinad Lunch Meals"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <div
+                class="absolute top-3 left-3 px-3 py-1 bg-amber-500 text-white text-xs font-black rounded-full uppercase tracking-wider shadow-md">
+                Afternoon Lunch
+              </div>
+            </div>
+
+            <h4 class="text-2xl font-black text-slate-900 font-serif italic">Only Lunch</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mt-2.5 mb-6">
+              Traditional Chettinad afternoon feast served hot with steaming Ponni rice, wood-pressed oil tadka,
+              aromatic arachuvitta sambar, and authentic pepper rasam. Complemented with fresh seasonal poriyal, kootu,
+              homestyle curd, and crunchy appalam prepared fresh daily.
+            </p>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="openChatWindow('Inquiry about Only Lunch homestyle delivery')"
+              class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-2 text-sm sm:text-base group">
+              <i data-lucide="message-circle" class="w-4 h-4 text-white group-hover:scale-110 transition-transform"></i>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Only Dinner -->
+        <div
+          class="bg-white rounded-3xl p-6 border-2 border-brand-100 hover:border-brand-500 shadow-lg hover:shadow-xl transition-all relative flex flex-col justify-between group">
+          <div>
+            <div class="relative w-full h-48 sm:h-52 rounded-2xl overflow-hidden mb-4 shadow-sm bg-slate-100">
+              <img src="assets/menu-dinner.jpg" alt="Nutritious Tamil Nadu Dinner"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <div
+                class="absolute top-3 left-3 px-3 py-1 bg-indigo-600 text-white text-xs font-black rounded-full uppercase tracking-wider shadow-md">
+                Night Dinner
+              </div>
+            </div>
+
+            <h4 class="text-2xl font-black text-slate-900 font-serif italic">Only Dinner</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mt-2.5 mb-6">
+              Light and wholesome Tamil Nadu night dinner featuring soft hand-rolled whole wheat phulkas and steaming
+              mallipoo idlis. Served with slow-simmered Chettinad vegetable kurma, yellow dal tadka, and freshly ground
+              coconut-coriander chutney crafted with zero soda and minimal oil.
+            </p>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="openChatWindow('Inquiry about Only Dinner homestyle delivery')"
+              class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-2 text-sm sm:text-base group">
+              <i data-lucide="message-circle" class="w-4 h-4 text-white group-hover:scale-110 transition-transform"></i>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Only Tiffen -->
+        <div
+          class="bg-white rounded-3xl p-6 border-2 border-brand-100 hover:border-brand-500 shadow-lg hover:shadow-xl transition-all relative flex flex-col justify-between group">
+          <div>
+            <div class="relative w-full h-48 sm:h-52 rounded-2xl overflow-hidden mb-4 shadow-sm bg-slate-100">
+              <img src="assets/menu-tiffen.jpg" alt="South Indian Breakfast & Tiffin"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <div
+                class="absolute top-3 left-3 px-3 py-1 bg-emerald-600 text-white text-xs font-black rounded-full uppercase tracking-wider shadow-md">
+                Breakfast &amp; Tiffin
+              </div>
+            </div>
+
+            <h4 class="text-2xl font-black text-slate-900 font-serif italic">Only Tiffen</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mt-2.5 mb-6">
+              Authentic South Indian morning tiffin made with naturally fermented batter, offering fluffy mallipoo
+              idlis, golden crispy cone ghee roast dosas, and fragrant ven pongal. Paired with slow-brewed drumstick
+              sambar, spicy Chettinad kara chutney, and coconut chutney.
+            </p>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="openChatWindow('Inquiry about Only Tiffen homestyle delivery')"
+              class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-2 text-sm sm:text-base group">
+              <i data-lucide="message-circle" class="w-4 h-4 text-white group-hover:scale-110 transition-transform"></i>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Weekend Saturday Sunday Combo -->
+        <div
+          class="bg-white rounded-3xl p-6 border-2 border-brand-100 hover:border-brand-500 shadow-lg hover:shadow-xl transition-all relative flex flex-col justify-between md:col-span-1 lg:col-span-1 group">
+          <div>
+            <div class="relative w-full h-48 sm:h-52 rounded-2xl overflow-hidden mb-4 shadow-sm bg-slate-100">
+              <img src="assets/menu-weekend.jpg" alt="Weekend Chettinad Feast"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <div
+                class="absolute top-3 left-3 px-3 py-1 bg-amber-600 text-white text-xs font-black rounded-full uppercase tracking-wider shadow-md">
+                Weekend Celebration
+              </div>
+            </div>
+
+            <h4 class="text-2xl font-black text-slate-900 font-serif italic">Weekend Saturday Sunday Combo</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mt-2.5 mb-6">
+              A lavish Tamil Nadu weekend celebration feast headlined by aromatic Seeraga Samba biryani, crispy medu
+              vadai, and golden potato roast varuval. Finished with rich Kalyana feast sambar, pachadi, crispy appalam,
+              and hot traditional payasam.
+            </p>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="openChatWindow('Inquiry about Weekend Saturday Sunday Combo')"
+              class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-2 text-sm sm:text-base group">
+              <i data-lucide="message-circle" class="w-4 h-4 text-white group-hover:scale-110 transition-transform"></i>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Daily & Monthly Combo (Professional Black Hotel Theme with Original Veg / Non-Veg Toggle) -->
+        <div
+          class="bg-[#09090b] text-white rounded-3xl p-6 sm:p-8 border border-zinc-800 shadow-2xl transition-all relative flex flex-col justify-between md:col-span-2 lg:col-span-2 group">
+
+          <div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-6">
+              <div
+                class="md:col-span-5 relative h-48 sm:h-56 rounded-2xl overflow-hidden shadow-lg bg-zinc-900 border border-zinc-800">
+                <img src="assets/menu-monthly.jpg" alt="Chettinad Monthly Home Feast"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              </div>
+              <div class="md:col-span-7">
+                <h4 class="text-2xl sm:text-3xl font-black text-white font-serif italic">Daily &amp; Monthly Combo</h4>
+                <p class="text-sm sm:text-base text-zinc-300 leading-relaxed mt-2">
+                  Our signature 30-day homestyle dining subscription prepared in authentic earthen clay pots using
+                  cold-pressed oils. Enjoy daily rotating Chettinad and Tamil home delicacies delivered hot in insulated
+                  containers, with complete freedom to pause or resume anytime via WhatsApp.
+                </p>
+              </div>
+            </div>
+
+            <!-- Professional Hotel-Style Original Veg & Non-Veg Toggle -->
+            <div class="bg-[#121216] p-5 rounded-2xl border border-zinc-800 mb-6 shadow-inner">
+              <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="text-xs font-extrabold text-zinc-300 uppercase tracking-wider">Select Meal Preference</div>
+
+                <div class="inline-flex bg-zinc-950 p-1 rounded-xl border border-zinc-800">
+                  <button type="button" id="toggleVegBtn" onclick="selectMonthlyDiet('veg')"
+                    class="flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-zinc-800 text-white shadow transition-all">
+                    <span
+                      class="w-4 h-4 border-2 border-green-500 flex items-center justify-center rounded-[3px] shrink-0">
+                      <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    </span>
+                    <span>Pure Veg</span>
+                  </button>
+                  <button type="button" id="toggleNonVegBtn" onclick="selectMonthlyDiet('non-veg')"
+                    class="flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-bold text-zinc-400 hover:text-zinc-200 transition-all">
+                    <span
+                      class="w-4 h-4 border-2 border-red-500 flex items-center justify-center rounded-[3px] shrink-0">
+                      <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                    </span>
+                    <span>Non-Veg</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="sendMonthlyComboMessage()"
+              class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2 text-sm sm:text-base group">
+              <i data-lucide="message-circle" class="w-5 h-5 text-white group-hover:scale-110 transition-transform"></i>
+              <span id="monthlyComboBtnText">Send Message for Pure Veg Combo</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3D Swipable Customer Reviews Section (Dark Orange & Black Theme, Tamil Nadu Faces) -->
+  <section id="reviews"
+    class="py-16 sm:py-24 bg-[#09090b] text-white border-t border-zinc-800 relative overflow-hidden select-none">
+    <div class="absolute inset-0 pointer-events-none"
+      style="background: radial-gradient(circle at 50% 45%, rgba(234, 88, 12, 0.16), transparent 65%);"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight font-serif italic text-white">
+          Loved by <span class="text-[#f97316]">Students, Techies &amp; Families</span>
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base mt-3">
+          Swipe through genuine messages from Zoho engineers, SRM students, and families across Guduvancheri, Urapakkam
+          &amp; SRM Surroundings.
+        </p>
+      </div>
+
+      <!-- 3D Carousel Stage -->
+      <div id="review3dStage"
+        class="relative h-[390px] sm:h-[360px] flex items-center justify-center cursor-grab active:cursor-grabbing"
+        style="perspective: 1200px;">
+        <!-- Cards rendered/positioned dynamically by app.js -->
+        <!-- Card 0: Zoho IT Professional -->
+        <div
+          class="review-3d-card absolute w-full max-w-[340px] sm:max-w-[520px] rounded-3xl p-6 sm:p-8 flex flex-col justify-between border"
+          data-index="0">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-1 text-[#ea580c]">
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <span class="text-xs font-black text-[#f97316] ml-2">5.0</span>
+              </div>
+              <i data-lucide="message-square-quote" class="w-5 h-5 text-[#ea580c]/70"></i>
+            </div>
+            <p class="text-zinc-200 text-sm sm:text-base leading-relaxed mb-6 font-serif italic">
+              &ldquo;Wanted to drop a quick message to thank amma's kitchen! Working long sprints at Zoho, I used to
+              skip lunch or order oily restaurant food. Their hot Ponni rice, arachuvitta sambar, and Chettinad poriyal
+              delivered right to Estancia feels just like eating at home in Madurai.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-800/90 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <img src="assets/reviewer-zoho-it.jpg" alt="Praveen Kumar R."
+                class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-[#ea580c] shadow-md shrink-0 pointer-events-none">
+              <div>
+                <div class="font-bold text-white text-sm sm:text-base leading-tight">Praveen Kumar R.</div>
+                <div class="text-[11px] sm:text-xs text-zinc-400 mt-0.5">Software Engineer at Zoho • Estancia,
+                  Guduvancheri</div>
+              </div>
+            </div>
+            <span
+              class="hidden sm:inline-block text-[11px] font-bold px-3 py-1 rounded-full bg-[#ea580c]/15 text-[#fb923c] border border-[#ea580c]/30 shrink-0">Monthly
+              Lunch Plan</span>
+          </div>
+        </div>
+
+        <!-- Card 1: SRM College Student -->
+        <div
+          class="review-3d-card absolute w-full max-w-[340px] sm:max-w-[520px] rounded-3xl p-6 sm:p-8 flex flex-col justify-between border"
+          data-index="1">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-1 text-[#ea580c]">
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <span class="text-xs font-black text-[#f97316] ml-2">5.0</span>
+              </div>
+              <i data-lucide="message-square-quote" class="w-5 h-5 text-[#ea580c]/70"></i>
+            </div>
+            <p class="text-zinc-200 text-sm sm:text-base leading-relaxed mb-6 font-serif italic">
+              &ldquo;Honestly wanted to message you guys—hostel mess food was ruining my health, and hotel meals were
+              too pricey. Switching to Sri Lakshmi HomeFood saved me! Soft mallipoo idlis, hand-rolled phulkas, and zero
+              soda. Pausing on WhatsApp when going home is super easy.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-800/90 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <img src="assets/reviewer-student.jpg" alt="Karthik Subramanian"
+                class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-[#ea580c] shadow-md shrink-0 pointer-events-none">
+              <div>
+                <div class="font-bold text-white text-sm sm:text-base leading-tight">Karthik Subramanian</div>
+                <div class="text-[11px] sm:text-xs text-zinc-400 mt-0.5">B.Tech Student, SRM • Potheri</div>
+              </div>
+            </div>
+            <span
+              class="hidden sm:inline-block text-[11px] font-bold px-3 py-1 rounded-full bg-[#ea580c]/15 text-[#fb923c] border border-[#ea580c]/30 shrink-0">Tiffin
+              &amp; Dinner Plan</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Female IT Engineer -->
+        <div
+          class="review-3d-card absolute w-full max-w-[340px] sm:max-w-[520px] rounded-3xl p-6 sm:p-8 flex flex-col justify-between border"
+          data-index="2">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-1 text-[#ea580c]">
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <span class="text-xs font-black text-[#f97316] ml-2">5.0</span>
+              </div>
+              <i data-lucide="message-square-quote" class="w-5 h-5 text-[#ea580c]/70"></i>
+            </div>
+            <p class="text-zinc-200 text-sm sm:text-base leading-relaxed mb-6 font-serif italic">
+              &ldquo;Just wanted to share how much we love your food! My husband and I both work in IT and rarely find
+              time to cook. Every meal arrives steaming hot in clean containers with authentic cold-pressed oil aroma.
+              Feels 100% hygienic and lovingly made.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-800/90 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <img src="assets/reviewer-female-it.jpg" alt="Divya Dharshini S."
+                class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-[#ea580c] shadow-md shrink-0 pointer-events-none">
+              <div>
+                <div class="font-bold text-white text-sm sm:text-base leading-tight">Divya Dharshini S.</div>
+                <div class="text-[11px] sm:text-xs text-zinc-400 mt-0.5">IT Professional • Urapakkam</div>
+              </div>
+            </div>
+            <span
+              class="hidden sm:inline-block text-[11px] font-bold px-3 py-1 rounded-full bg-[#ea580c]/15 text-[#fb923c] border border-[#ea580c]/30 shrink-0">Monthly
+              Combo</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Family Resident -->
+        <div
+          class="review-3d-card absolute w-full max-w-[340px] sm:max-w-[520px] rounded-3xl p-6 sm:p-8 flex flex-col justify-between border"
+          data-index="3">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-1 text-[#ea580c]">
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-[#ea580c]"></i>
+                <span class="text-xs font-black text-[#f97316] ml-2">5.0</span>
+              </div>
+              <i data-lucide="message-square-quote" class="w-5 h-5 text-[#ea580c]/70"></i>
+            </div>
+            <p class="text-zinc-200 text-sm sm:text-base leading-relaxed mb-6 font-serif italic">
+              &ldquo;Wanted to send a heartfelt thank you for the Weekend Saturday-Sunday Combo! The fragrant Seeraga
+              Samba biryani, crispy medu vadai, and rich payasam reminded us of traditional Kalyana virundhu. Generous
+              portions for the whole family.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-800/90 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <img src="assets/reviewer-family.jpg" alt="Venkatesan &amp; Family"
+                class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-[#ea580c] shadow-md shrink-0 pointer-events-none">
+              <div>
+                <div class="font-bold text-white text-sm sm:text-base leading-tight">Venkatesan &amp; Family</div>
+                <div class="text-[11px] sm:text-xs text-zinc-400 mt-0.5">Residents • Guduvancheri</div>
+              </div>
+            </div>
+            <span
+              class="hidden sm:inline-block text-[11px] font-bold px-3 py-1 rounded-full bg-[#ea580c]/15 text-[#fb923c] border border-[#ea580c]/30 shrink-0">Weekend
+              Combo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Controls & Dots -->
+      <div class="flex items-center justify-center gap-5 mt-6">
+        <button id="reviewPrevBtn" aria-label="Previous review"
+          class="w-10 h-10 rounded-full bg-zinc-900 hover:bg-[#ea580c] border border-zinc-700 hover:border-[#ea580c] text-white flex items-center justify-center transition-all shadow-lg">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+        <div id="reviewDots" class="flex items-center gap-2">
+          <button class="review-dot h-2 w-7 rounded-full bg-[#ea580c] transition-all duration-300"
+            data-index="0"></button>
+          <button class="review-dot h-2 w-2 rounded-full bg-zinc-700 hover:bg-zinc-500 transition-all duration-300"
+            data-index="1"></button>
+          <button class="review-dot h-2 w-2 rounded-full bg-zinc-700 hover:bg-zinc-500 transition-all duration-300"
+            data-index="2"></button>
+          <button class="review-dot h-2 w-2 rounded-full bg-zinc-700 hover:bg-zinc-500 transition-all duration-300"
+            data-index="3"></button>
+        </div>
+        <button id="reviewNextBtn" aria-label="Next review"
+          class="w-10 h-10 rounded-full bg-zinc-900 hover:bg-[#ea580c] border border-zinc-700 hover:border-[#ea580c] text-white flex items-center justify-center transition-all shadow-lg">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Curved Cravings Heading: Know Your Answers Here!) -->
+  <section id="faq" class="py-16 sm:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-serif italic text-slate-900">
+          <span class="bg-gradient-to-r from-amber-700 via-amber-600 to-emerald-700 bg-clip-text text-transparent">
+            Know Your Answers Here!
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-serif italic text-black">
+            Know Your Answers Here!
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3">
+            Everything you crave to know about our hot, freshly prepared daily homestyle food.
+          </p>
+      </div>
+
+      <!-- FAQ Accordions -->
+      <div class="space-y-4">
+
+        <details
+          class="group bg-slate-50 rounded-2xl border border-slate-200 p-5 open:bg-amber-50/40 hover:border-amber-300 transition-all cursor-pointer shadow-sm">
+          <summary
+            class="flex justify-between items-center font-extrabold text-slate-900 text-base sm:text-lg list-none">
+            <span>Which areas do you deliver to?</span>
+            <span
+              class="transition-transform duration-300 group-open:rotate-180 text-amber-600 font-black text-lg">▾</span>
+          </summary>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed border-t border-slate-200/80 pt-3">
+            We deliver daily hot homestyle meals across <strong>Guduvancheri</strong>, <strong>Urapakkam</strong>, and
+            <strong>SRM Surroundings (Potheri &amp; Kattankulathur)</strong>, including all major apartment complexes
+            and student residences.
+          </p>
+        </details>
+
+        <details
+          class="group bg-slate-50 rounded-2xl border border-slate-200 p-5 open:bg-amber-50/40 hover:border-amber-300 transition-all cursor-pointer shadow-sm">
+          <summary
+            class="flex justify-between items-center font-extrabold text-slate-900 text-base sm:text-lg list-none">
+            <span>Can I pause or adjust my Monthly Subscription days?</span>
+            <span
+              class="transition-transform duration-300 group-open:rotate-180 text-amber-600 font-black text-lg">▾</span>
+          </summary>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed border-t border-slate-200/80 pt-3">
+            Yes, completely flexible! If you are traveling, going on holiday, or dining out, simply drop a quick
+            WhatsApp message a day prior. We will pause your delivery and carry forward your days seamlessly.
+          </p>
+        </details>
+
+        <details
+          class="group bg-slate-50 rounded-2xl border border-slate-200 p-5 open:bg-amber-50/40 hover:border-amber-300 transition-all cursor-pointer shadow-sm">
+          <summary
+            class="flex justify-between items-center font-extrabold text-slate-900 text-base sm:text-lg list-none">
+            <span>Is the food really 100% home-cooked?</span>
+            <span
+              class="transition-transform duration-300 group-open:rotate-180 text-amber-600 font-black text-lg">▾</span>
+          </summary>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed border-t border-slate-200/80 pt-3">
+            Yes, strictly homestyle cooking by experienced mothers! We use traditional wood-pressed oils, pure
+            ingredients, freshly ground spices, zero cooking soda, and no artificial coloring or preservatives.
+          </p>
+        </details>
+
+        <details
+          class="group bg-slate-50 rounded-2xl border border-slate-200 p-5 open:bg-amber-50/40 hover:border-amber-300 transition-all cursor-pointer shadow-sm">
+          <summary
+            class="flex justify-between items-center font-extrabold text-slate-900 text-base sm:text-lg list-none">
+            <span>What are the daily delivery time slots?</span>
+            <span
+              class="transition-transform duration-300 group-open:rotate-180 text-amber-600 font-black text-lg">▾</span>
+          </summary>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed border-t border-slate-200/80 pt-3">
+            • <strong>Morning Breakfast:</strong> 7:30 AM – 8:30 AM<br>
+            • <strong>Afternoon Lunch:</strong> 12:15 PM – 1:15 PM<br>
+            • <strong>Night Dinner:</strong> 7:30 PM – 8:30 PM<br>
+            All food is delivered hot in insulated thermal food containers.
+          </p>
+        </details>
+
+        <details
+          class="group bg-slate-50 rounded-2xl border border-slate-200 p-5 open:bg-amber-50/40 hover:border-amber-300 transition-all cursor-pointer shadow-sm">
+          <summary
+            class="flex justify-between items-center font-extrabold text-slate-900 text-base sm:text-lg list-none">
+            <span>How do I order or start a trial meal?</span>
+            <span
+              class="transition-transform duration-300 group-open:rotate-180 text-amber-600 font-black text-lg">▾</span>
+          </summary>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed border-t border-slate-200/80 pt-3">
+            Simply click the <strong>Send Message</strong> button on your preferred menu package above to message our
+            kitchen directly on WhatsApp, or complete the booking form below. We will confirm your timing and address
+            immediately.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking Details Form (No open payment calculations on homepage) -->
+  <section id="booking-form" class="py-16 sm:py-20 relative bg-gradient-to-b from-white to-brand-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Book Food or Request Delivery</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Enter your details and delivery time slot below. Submit to proceed to payment or message us directly on
+          WhatsApp.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl border-2 border-brand-200 shadow-xl overflow-hidden">
+
+        <div class="bg-brand-800 text-white p-6 sm:p-8 flex items-center justify-between">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-tamil text-2xl font-black text-green-300">ஸ்ரீ</span>
+              <span class="text-lg sm:text-xl font-black tracking-wide">FOODS KITCHEN BOOKING DESK</span>
+            </div>
+            <p class="text-xs text-green-200 mt-1">Direct Homestyle Catering &amp; Subscription Order</p>
+          </div>
+          <div class="hidden sm:block text-xs bg-white/10 px-3.5 py-1.5 rounded-xl text-green-100">
+            Fresh Daily Cooking
+          </div>
+        </div>
+
+        <form id="orderForm" onsubmit="handleOrderSubmission(event)" class="p-6 sm:p-10 space-y-7">
+
+          <!-- Contact Info -->
+          <div>
+            <div
+              class="flex items-center gap-2 text-brand-800 font-extrabold text-base mb-4 border-b border-slate-100 pb-2">
+              <i data-lucide="user" class="w-5 h-5 text-brand-600"></i>
+              <span>1. Contact Details</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="custName" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Full Name
+                  *</label>
+                <input type="text" id="custName" required placeholder="e.g. Ramesh Kumar / Priya Soundar"
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all">
+              </div>
+
+              <div>
+                <label for="custWhatsApp" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">WhatsApp
+                  Number *</label>
+                <div class="flex">
+                  <span
+                    class="inline-flex items-center px-3.5 rounded-l-xl border border-r-0 border-slate-300 bg-slate-50 text-slate-500 text-sm font-semibold">+91</span>
+                  <input type="tel" id="custWhatsApp" required placeholder="98401 23456" pattern="[0-9]{10}"
+                    class="w-full px-4 py-3 rounded-r-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package Selection -->
+          <div>
+            <div
+              class="flex items-center gap-2 text-brand-800 font-extrabold text-base mb-4 border-b border-slate-100 pb-2">
+              <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-600"></i>
+              <span>2. Choose Package &amp; Member Count</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="packageSelect" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Selected Food
+                  Package *</label>
+                <select id="packageSelect" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all bg-white font-medium">
+                  <option value="Only Lunch" selected>Only Lunch</option>
+                  <option value="Only Dinner">Only Dinner</option>
+                  <option value="Only Tiffen">Only Tiffen</option>
+                  <option value="Weekend Saturday Sunday Combo">Weekend Saturday Sunday Combo</option>
+                  <option value="Daily & Monthly Combo - Pure Veg">Daily &amp; Monthly Combo - Pure Veg</option>
+                  <option value="Daily & Monthly Combo - Non-Veg">Daily &amp; Monthly Combo - Non-Veg</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="guestCount" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Member Count /
+                  Sizing *</label>
+                <select id="guestCount"
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all bg-white font-medium">
+                  <option value="1">1 Plan / 10-15 Guests</option>
+                  <option value="1.5">15-20 Guests</option>
+                  <option value="2">20-25 Guests</option>
+                  <option value="2.5">25-30 Guests</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Delivery Address & Time Slot Needed -->
+          <div>
+            <div
+              class="flex items-center gap-2 text-brand-800 font-extrabold text-base mb-4 border-b border-slate-100 pb-2">
+              <i data-lucide="map-pin" class="w-5 h-5 text-brand-600"></i>
+              <span>3. Delivery Address &amp; Delivery Time Needed</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label for="deliveryArea" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Delivery City
+                  / Area Hub *</label>
+                <select id="deliveryArea" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all bg-white font-medium">
+                  <option value="Guduvancheri">Guduvancheri</option>
+                  <option value="Urapakkam">Urapakkam</option>
+                  <option value="SRM Surroundings">SRM Surroundings (Potheri &amp; Kattankulathur)</option>
+                  <option value="Current Location (GPS)">Use My Current Location (GPS)</option>
+                  <option value="Other Area (Mention in Address)">Other Area (Mention in Address)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="deliveryTimeSlot" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Delivery
+                  Time Needed *</label>
+                <select id="deliveryTimeSlot" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all bg-white font-medium">
+                  <option value="Morning Breakfast (7:30 AM - 8:30 AM)">Morning Breakfast (7:30 AM - 8:30 AM)</option>
+                  <option value="Afternoon Lunch (12:00 PM - 1:00 PM)" selected>Afternoon Lunch (12:00 PM - 1:00 PM)
+                  </option>
+                  <option value="Night Dinner (7:30 PM - 8:30 PM)">Night Dinner (7:30 PM - 8:30 PM)</option>
+                  <option value="Event Lunch Feast (11:30 AM - Before Pooja)">Event Lunch Feast (11:30 AM - Before
+                    Pooja)</option>
+                  <option value="Event Dinner Feast (7:00 PM)">Event Dinner Feast (7:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              <div class="sm:col-span-2">
+                <div class="flex items-center justify-between gap-2 mb-1.5">
+                  <label for="fullAddress" class="block text-xs font-bold text-slate-700 uppercase">Complete Street
+                    Address &amp; Flat/Door No *</label>
+                  <button type="button" id="useLocationBtn" onclick="useCurrentLocation()"
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 hover:bg-brand-700 text-white text-[11px] font-bold transition-all shadow-sm">
+                    <i data-lucide="locate-fixed" class="w-3.5 h-3.5 text-white"></i>
+                    <span>Use Current Location</span>
+                  </button>
+                </div>
+                <input type="text" id="fullAddress" required
+                  placeholder="Flat 3B, Sri Apartments, 4th Main Road, Landmark or click Use Current Location"
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all">
+              </div>
+
+              <div>
+                <label for="deliveryDate" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Delivery Start
+                  Date *</label>
+                <input type="date" id="deliveryDate" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 text-sm outline-none transition-all bg-white">
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <label for="specialNotes" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Dietary Notes /
+                Special Requests (Optional)</label>
+              <input type="text" id="specialNotes"
+                placeholder="e.g. Jain (no onion/garlic), less spicy for elders, diabetic rice, extra appalam..."
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 text-sm outline-none">
+            </div>
+          </div>
+
+          <!-- Submit Action -->
+          <div class="pt-3 space-y-3">
+            <button type="submit"
+              class="w-full bg-brand-700 hover:bg-brand-800 text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-xl shadow-brand-700/25 transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-3">
+              <span>Submit Details &amp; Proceed to Payment Page</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+
+            <button type="button" onclick="triggerWhatsAppFromForm()"
+              class="w-full bg-white hover:bg-brand-50 text-brand-800 border-2 border-brand-600 font-bold text-sm py-3 px-6 rounded-2xl transition-all flex items-center justify-center gap-2 shadow-sm">
+              <i data-lucide="message-circle" class="w-4 h-4 text-brand-600"></i>
+              <span>Or Enquire / Message on WhatsApp</span>
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Monochrome Production Level) -->
+  <footer class="bg-[#0b0f17] text-slate-400 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 96 84" class="w-11 h-10 shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="footerLeafGrad" x1="0%" y1="20%" x2="100%" y2="80%">
+                  <stop offset="0%" stop-color="#15803d" />
+                  <stop offset="50%" stop-color="#22c55e" />
+                  <stop offset="100%" stop-color="#166534" />
+                </linearGradient>
+              </defs>
+              <path d="M 8 42 C 12 14, 46 4, 82 10 C 95 28, 96 58, 78 72 C 42 80, 12 70, 8 42 Z"
+                fill="url(#footerLeafGrad)" stroke="#fef08a" stroke-width="1.2" stroke-opacity="0.45" />
+              <path d="M 8 42 Q 46 41 86 41" stroke="#86efac" stroke-width="2" stroke-linecap="round"
+                stroke-opacity="0.65" />
+              <text x="48" y="53" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="700"
+                font-family="'Noto Sans Tamil', 'Latha', 'Vijaya', serif">ஸ்ரீ</text>
+            </svg>
+            <div>
+              <div class="text-xl font-black tracking-wide text-white font-serif italic leading-none">
+                Sri Lakshmi
+              </div>
+              <div class="text-[11px] font-bold tracking-[0.25em] text-emerald-400 uppercase mt-1">
+                HOME FOOD
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Authentic South Indian homestyle food catering and monthly meal subscriptions. Cooked fresh daily with pure
+            cold-pressed oils, zero additives, and served with tradition.
+          </p>
+          <div class="text-[11px] text-slate-500 font-mono tracking-wider">
+            FSSAI LIC: 22423567000189
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">Our Menu</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="#packages" class="hover:text-white transition-colors">Only Lunch</a></li>
+            <li><a href="#packages" class="hover:text-white transition-colors">Only Dinner</a></li>
+            <li><a href="#packages" class="hover:text-white transition-colors">Only Tiffen</a></li>
+            <li><a href="#packages" class="hover:text-white transition-colors">Weekend Saturday Sunday Combo</a></li>
+            <li><a href="#packages" class="hover:text-white transition-colors">Monthly Combo (Veg &amp; Non-Veg)</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">Delivery Hubs</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li>• Guduvancheri</li>
+            <li>• Urapakkam</li>
+            <li>• SRM Surroundings (Potheri &amp; Kattankulathur)</li>
+            <li>• Surrounding Areas</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">Kitchen Contact</h4>
+          <div class="space-y-2.5 text-xs text-slate-400">
+            <div>Main Kitchen Hub: Guduvancheri &amp; Urapakkam</div>
+            <div>Support: WhatsApp Instant Support Available</div>
+            <div>Email: srilakshmihomefoods@gmail.com</div>
+            <div class="text-[11px] text-slate-500 pt-1">Kitchen Hours: 7:00 AM – 9:00 PM</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+        class="border-t border-slate-800/80 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>&copy; 2026 Sri Lakshmi Foods. All Rights Reserved. Traditional Homestyle Kitchen.</div>
+        <div class="flex gap-6 text-xs">
+          <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
+          <button type="button" onclick="openPolicyModal('terms')" class="hover:text-white transition-colors">Terms of Service</button>
+          <button type="button" onclick="openPolicyModal('hygiene')" class="hover:text-white transition-colors">Food Safety &amp; Hygiene</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Widget (at bottom right) -->
+  <div class="wa-floating-btn wa-ringing" id="waFloatingBtn" onclick="toggleChatWindow()"
+    title="Click to chat with ஸ்ரீ Foods on WhatsApp">
+    <div class="wa-pulse-ring"></div>
+    <div class="wa-pulse-ring"></div>
+    <svg class="w-9 h-9 fill-white relative z-10" viewBox="0 0 24 24">
+      <path
+        d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.17 8.17 0 0 1-5.83 2.41c-1.47 0-2.91-.39-4.17-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.174 8.174 0 0 1-1.25-4.4c0-4.54 3.7-8.24 8.24-8.24zm-3.53 4.49c-.2-.44-.41-.45-.6-.46-.16-.01-.34-.01-.52-.01s-.48.07-.73.34c-.25.28-.96.94-.96 2.3s.98 2.67 1.12 2.85c.14.19 1.93 2.95 4.67 4.14.65.28 1.16.45 1.56.57.66.21 1.25.18 1.73.11.53-.08 1.63-.66 1.86-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.32s-1.63-.8-1.88-.9-.44-.14-.62.14-.71.9-.87 1.08c-.16.18-.32.21-.59.07-.27-.14-1.16-.43-2.21-1.37-.82-.73-1.37-1.64-1.53-1.92-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.28.27-.46.09-.18.05-.35-.02-.48-.08-.14-.59-1.46-.82-1.98z" />
+    </svg>
+  </div>
+
+  <!-- In-Screen WhatsApp Window -->
+  <div class="wa-chat-window hidden" id="waChatWindow">
+    <div class="bg-[#075e54] text-white p-4 flex items-center justify-between shadow-md">
+      <div class="flex items-center gap-3">
+        <div class="relative">
+          <div
+            class="w-10 h-10 rounded-full bg-white p-0.5 overflow-hidden flex items-center justify-center font-tamil text-brand-800 font-black text-lg">
+            ஸ்ரீ
+          </div>
+          <span class="absolute bottom-0 right-0 w-3 h-3 bg-green-400 border-2 border-[#075e54] rounded-full"></span>
+        </div>
+        <div>
+          <div class="text-sm font-bold flex items-center gap-1.5">
+            <span>ஸ்ரீ Foods Kitchen Desk</span>
+            <i data-lucide="badge-check" class="w-4 h-4 text-green-300"></i>
+          </div>
+          <div class="text-[11px] text-green-100">Online • Typically replies in 2 mins</div>
+        </div>
+      </div>
+      <button onclick="toggleChatWindow()"
+        class="text-white/80 hover:text-white p-1 rounded-full hover:bg-white/10 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div class="wa-chat-body flex-1 p-4 overflow-y-auto space-y-3 text-xs">
+      <div class="text-center">
+        <span
+          class="bg-white/80 text-slate-500 text-[10px] px-2.5 py-1 rounded-full shadow-sm font-semibold">TODAY</span>
+      </div>
+
+      <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] space-y-1.5 text-slate-800">
+        <div class="font-bold text-brand-800 text-[11px]">Chef Lakshmi (ஸ்ரீ Foods)</div>
+        <p>வணக்கம்! Welcome to ஸ்ரீ Foods Kitchen. We make fresh homestyle monthly meals and event food for 10-30
+          guests.</p>
+        <p class="text-slate-500 text-[10px]">Select your delivery location below or type your inquiry:</p>
+      </div>
+
+      <div class="bg-white p-3 rounded-2xl shadow-sm border border-brand-200 space-y-2">
+        <label for="waLocationSelect" class="block text-[11px] font-bold text-brand-900 flex items-center gap-1">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-600"></i>
+          <span>Choose Delivery Location:</span>
+        </label>
+
+        <select id="waLocationSelect"
+          class="w-full text-xs p-2 rounded-lg border border-slate-300 bg-slate-50 text-slate-800 font-medium outline-none focus:border-brand-600">
+          <option value="Guduvancheri">Guduvancheri</option>
+          <option value="Urapakkam">Urapakkam</option>
+          <option value="SRM Surroundings">SRM Surroundings (Potheri &amp; Kattankulathur)</option>
+          <option value="Custom Location">Other / Custom Delivery Address</option>
+        </select>
+
+        <input type="text" id="waCustomAddress" placeholder="Enter landmark or flat/street name..."
+          class="w-full text-xs p-2 rounded-lg border border-slate-200 outline-none focus:border-brand-600">
+      </div>
+
+      <div class="space-y-1.5 pt-1">
+        <div class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Quick Inquiries:</div>
+        <div class="flex flex-wrap gap-1.5">
+          <button onclick="fillWaQuickMsg('I want to subscribe to Monthly Lunch Box.')"
+            class="bg-slate-900 hover:bg-brand-700 text-white text-[11px] px-3 py-1.5 rounded-full font-semibold transition-all inline-flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="utensils" class="w-3 h-3 text-white"></i>
+            <span>Monthly Lunch Box</span>
+          </button>
+          <button onclick="fillWaQuickMsg('Need quotation for Event Catering (10-30 Members).')"
+            class="bg-slate-900 hover:bg-brand-700 text-white text-[11px] px-3 py-1.5 rounded-full font-semibold transition-all inline-flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="chef-hat" class="w-3 h-3 text-white"></i>
+            <span>Event Food (10-30 Pax)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3 bg-white border-t border-slate-200 flex items-center gap-2">
+      <input type="text" id="waInputMessage" placeholder="Type message to kitchen..."
+        class="flex-1 text-xs px-3.5 py-2.5 rounded-full border border-slate-300 focus:border-green-600 focus:ring-1 focus:ring-green-500 outline-none">
+      <button onclick="sendToWhatsAppNow()"
+        class="w-10 h-10 rounded-full bg-[#128c7e] hover:bg-[#075e54] text-white flex items-center justify-center transition-colors shadow flex-shrink-0"
+        title="Send to WhatsApp">
+        <i data-lucide="send" class="w-4 h-4 ml-0.5"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Dedicated Payment Modal (Opened only from form submission or Payment Page button) -->
+  <div id="paymentModal" class="fixed inset-0 z-50 modal-overlay hidden flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border-2 border-brand-300 animate-in fade-in zoom-in-95 duration-200 max-h-[90vh] overflow-y-auto">
+
+      <div class="bg-brand-800 text-white p-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i data-lucide="check-circle" class="w-5 h-5 text-green-300"></i>
+          <span class="font-bold text-base">50% Advance Payment Desk</span>
+        </div>
+        <button onclick="closePaymentModal()" class="text-white/80 hover:text-white p-1 rounded-full hover:bg-white/10">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-5">
+        <div class="text-center">
+          <h3 class="text-xl font-black text-slate-900">Advance Receipt &amp; Slot Confirmation</h3>
+          <p class="text-xs text-slate-500" id="receiptOrderId">Order ID: SHREE-2026-9812</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2">
+          <div class="flex justify-between">
+            <span class="text-slate-500">Customer Name:</span>
+            <span class="font-bold text-slate-800" id="rcptCustName">Valued Customer</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Food Package:</span>
+            <span class="font-bold text-slate-800" id="rcptPackage">Amma Veg Lunch Feast</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Delivery Time Needed:</span>
+            <span class="font-bold text-brand-700" id="rcptTime">Lunch (12:00 PM)</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Total Order Amount:</span>
+            <span class="font-bold text-slate-800" id="rcptTotal">₹3,499</span>
+          </div>
+          <div class="border-t border-slate-200 pt-2 flex justify-between font-extrabold text-sm text-brand-900">
+            <span>50% Advance Payable Now:</span>
+            <span id="rcptAdvance">₹1,750</span>
+          </div>
+          <div class="flex justify-between text-[11px] text-slate-500">
+            <span>Balance on Delivery (50%):</span>
+            <span id="rcptBalance">₹1,749</span>
+          </div>
+        </div>
+
+        <div class="text-center p-4 bg-brand-50 rounded-2xl border-2 border-dashed border-brand-300">
+          <div class="text-xs font-bold text-brand-900 mb-2">Scan &amp; Pay 50% Advance via GPay / PhonePe / Paytm</div>
+          <div
+            class="w-40 h-40 mx-auto bg-white p-2 rounded-xl border border-slate-200 shadow-inner flex items-center justify-center relative">
+            <svg viewBox="0 0 100 100" class="w-full h-full">
+              <rect width="100" height="100" fill="#ffffff" />
+              <rect x="10" y="10" width="25" height="25" fill="#15803d" />
+              <rect x="15" y="15" width="15" height="15" fill="#ffffff" />
+              <rect x="18" y="18" width="9" height="9" fill="#15803d" />
+              <rect x="65" y="10" width="25" height="25" fill="#15803d" />
+              <rect x="70" y="15" width="15" height="15" fill="#ffffff" />
+              <rect x="73" y="18" width="9" height="9" fill="#15803d" />
+              <rect x="10" y="65" width="25" height="25" fill="#15803d" />
+              <rect x="15" y="70" width="15" height="15" fill="#ffffff" />
+              <rect x="18" y="73" width="9" height="9" fill="#15803d" />
+              <rect x="42" y="12" width="6" height="6" fill="#15803d" />
+              <rect x="52" y="18" width="6" height="6" fill="#15803d" />
+              <rect x="42" y="28" width="6" height="6" fill="#15803d" />
+              <rect x="40" y="40" width="20" height="20" fill="#15803d" />
+              <rect x="44" y="44" width="12" height="12" fill="#ffffff" />
+              <rect x="65" y="45" width="8" height="8" fill="#15803d" />
+              <rect x="78" y="55" width="8" height="8" fill="#15803d" />
+              <rect x="45" y="68" width="8" height="8" fill="#15803d" />
+              <rect x="60" y="75" width="14" height="8" fill="#15803d" />
+              <rect x="78" y="75" width="10" height="14" fill="#15803d" />
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span
+                class="bg-brand-700 text-white font-tamil text-[10px] font-black px-1.5 py-0.5 rounded shadow">ஸ்ரீ</span>
+            </div>
+          </div>
+          <div class="text-[11px] text-slate-500 mt-2 font-mono">UPI ID: shreefoods@okaxis</div>
+        </div>
+
+        <button onclick="completePaymentSimulation()"
+          class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2 text-sm">
+          <i data-lucide="check" class="w-4 h-4"></i>
+          <span>I Have Completed 50% Advance (Send Slip to WhatsApp)</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Policy Modal (Privacy Policy, Terms of Service, Food Safety & Hygiene) -->
+  <div id="policyModal" class="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4" onclick="closePolicyModal()">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-hidden shadow-2xl border border-slate-200 flex flex-col" onclick="event.stopPropagation()">
+      <div class="bg-[#09090b] text-white px-6 py-5 flex items-center justify-between border-b border-zinc-800">
+        <div>
+          <h3 id="policyModalTitle" class="text-xl font-black font-serif italic text-white leading-tight">Policy</h3>
+          <p id="policyModalSubtitle" class="text-[11px] text-zinc-400 mt-0.5">Last updated: November 2026</p>
+        </div>
+        <button type="button" onclick="closePolicyModal()" class="text-zinc-400 hover:text-white p-1.5 rounded-full hover:bg-zinc-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="policyModalBody" class="p-6 sm:p-8 overflow-y-auto space-y-4 text-sm text-slate-600 leading-relaxed"></div>
+      <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex justify-end">
+        <button type="button" onclick="closePolicyModal()" class="px-6 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold transition-all">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

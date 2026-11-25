@@ -1,0 +1,15 @@
+{
+  "name": "lakshmi-foods",
+  "version": "1.0.0",
+  "description": "Fullstack Food Catering & Subscription Platform - React Frontend & Express Backend",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "node backend/server.js",
+    "client": "cd frontend && npm run dev",
+    "client:build": "cd frontend && npm run build",
+    "client:preview": "cd frontend && npm run preview"
+  },
+  "keywords": ["food-catering", "react", "express", "south-indian-food", "subscription"],
+  "author": "Antigravity",
+  "license": "ISC"
+}

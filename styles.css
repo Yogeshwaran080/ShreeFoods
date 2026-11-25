@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-green: #15803d;
+  --primary-light: #22c55e;
+  --primary-dark: #14532d;
+  --leaf-emerald: #166534;
+  --bg-fresh: #f0fdf4;
+  --bg-card: #ffffff;
+  --turmeric-gold: #f59e0b;
+  --pure-white: #ffffff;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
+  --border-green: #bbf7d0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  color: var(--text-dark);
+  background-color: #f8fafc;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 30%, #ffffff 70%, #f0fdf4 100%);
+}
+
+/* Tamil font class */
+.font-tamil {
+  font-family: 'Anek Tamil', 'Noto Sans Tamil', serif;
+}
+
+/* Banana Leaf Organic Background motif */
+.banana-leaf-bg {
+  background-color: #f0fdf4;
+  background-image: radial-gradient(#86efac 0.75px, transparent 0.75px), radial-gradient(#86efac 0.75px, #f0fdf4 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Craving floating food items */
+.floating-food {
+  position: fixed;
+  z-index: 25;
+  pointer-events: none;
+  transition: transform 0.12s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.18));
+}
+
+.food-vada {
+  top: 18%;
+  right: 2%;
+  width: 110px;
+  height: 110px;
+  animation: floatBob 6s ease-in-out infinite alternate;
+}
+
+.food-jamun {
+  top: 52%;
+  left: 2%;
+  width: 95px;
+  height: 95px;
+  animation: floatBob 7s ease-in-out infinite alternate-reverse;
+}
+
+.food-appalam {
+  top: 75%;
+  right: 3%;
+  width: 120px;
+  height: 120px;
+  animation: floatBob 8s ease-in-out infinite alternate;
+}
+
+.food-curryleaf {
+  top: 36%;
+  left: 4%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.85;
+  animation: floatSway 5s ease-in-out infinite alternate;
+}
+
+@keyframes floatBob {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(6deg); }
+  100% { transform: translateY(8px) rotate(-6deg); }
+}
+
+@keyframes floatSway {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  100% { transform: translate(12px, -18px) rotate(15deg); }
+}
+
+/* WhatsApp Ringing Button & Ripple */
+.wa-floating-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45), 0 4px 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.wa-floating-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Ringing animation */
+.wa-ringing {
+  animation: waRing 2.2s infinite;
+}
+
+@keyframes waRing {
+  0% { transform: rotate(0) scale(1); }
+  2% { transform: rotate(-14deg) scale(1.05); }
+  4% { transform: rotate(14deg) scale(1.05); }
+  6% { transform: rotate(-12deg) scale(1.05); }
+  8% { transform: rotate(12deg) scale(1.05); }
+  10% { transform: rotate(-8deg) scale(1.03); }
+  12% { transform: rotate(8deg) scale(1.03); }
+  14% { transform: rotate(0) scale(1); }
+  100% { transform: rotate(0) scale(1); }
+}
+
+/* WhatsApp Radar Pulses */
+.wa-pulse-ring {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  border: 3px solid #25d366;
+  opacity: 0.8;
+  animation: radarPulse 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+  pointer-events: none;
+}
+
+.wa-pulse-ring:nth-child(2) {
+  animation-delay: 0.65s;
+}
+
+@keyframes radarPulse {
+  0% { transform: scale(0.95); opacity: 0.9; }
+  70% { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+/* 3D Lady Avatar Widget */
+.lady-avatar-float {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 45;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.16));
+}
+
+.lady-avatar-img-box {
+  width: 82px;
+  height: 96px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  padding: 4px;
+  border: 2.5px solid #22c55e;
+  box-shadow: 0 8px 20px rgba(22, 101, 52, 0.2);
+  transition: transform 0.3s ease;
+  animation: avatarFloat 4s ease-in-out infinite alternate;
+}
+
+.lady-avatar-img-box:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+@keyframes avatarFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+/* Speech Bubble from Lady */
+.lady-speech-bubble {
+  background: #ffffff;
+  border: 2px solid #86efac;
+  border-radius: 18px 18px 18px 4px;
+  padding: 10px 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  max-width: 260px;
+  font-size: 13px;
+  line-height: 1.4;
+  position: relative;
+  cursor: pointer;
+  animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.7) translateY(10px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Packages Toggle Pills */
+.toggle-tab-btn {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-tab-btn.active {
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(21, 128, 61, 0.3);
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(134, 239, 172, 0.4);
+}
+
+/* Handwriting Font & Strike-Through Styles from Reference Banner */
+.font-handwriting {
+  font-family: 'Caveat', 'Kalam', 'Alex Brush', cursive;
+}
+
+@keyframes strikeAnim {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    width: 112%;
+    opacity: 1;
+  }
+}
+
+.strike-yellow {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.strike-yellow::after {
+  content: '';
+  position: absolute;
+  left: -6%;
+  top: 50%;
+  height: 6px;
+  background-color: #facc15;
+  border-radius: 9999px;
+  transform: rotate(-2deg);
+  pointer-events: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  animation: strikeAnim 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.3s;
+  width: 0%;
+}
+
+/* Hero Mom Image Frame */
+.hero-mom-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-mom-img {
+  max-height: 480px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.45));
+}
+
+/* Craving Food Cards */
+.food-card {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px -10px rgba(21, 128, 61, 0.18);
+  border-color: #22c55e;
+}
+
+/* Custom Modal Animations */
+.modal-overlay {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+/* WhatsApp Chat Window on Screen */
+.wa-chat-window {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  width: 370px;
+  max-width: calc(100vw - 36px);
+  height: 560px;
+  max-height: calc(100vh - 120px);
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  z-index: 55;
+  display: flex;
+  flex-direction: column;
+  transform-origin: bottom right;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.wa-chat-window.hidden {
+  opacity: 0;
+  transform: scale(0.6) translateY(50px);
+  pointer-events: none;
+}
+
+.wa-chat-body {
+  background-color: #efeae2;
+  background-image: radial-gradient(#d1d7db 0.8px, transparent 0.8px);
+  background-size: 16px 16px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f0fdf4;
+}
+::-webkit-scrollbar-thumb {
+  background: #86efac;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}
+
+@media (max-width: 640px) {
+  .food-vada { width: 75px; height: 75px; right: 0; }
+  .food-jamun { width: 65px; height: 65px; left: -10px; }
+  .food-appalam { width: 80px; height: 80px; right: -10px; }
+  .lady-avatar-float { bottom: 16px; left: 16px; }
+  .lady-avatar-img-box { width: 68px; height: 80px; }
+  .wa-floating-btn { bottom: 16px; right: 16px; width: 58px; height: 58px; }
+  .wa-chat-window { bottom: 84px; right: 16px; width: 340px; height: 500px; }
+}

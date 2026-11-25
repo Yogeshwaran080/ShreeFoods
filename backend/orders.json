@@ -1,0 +1,44 @@
+[
+  {
+    "orderId": "SLHF-085241",
+    "custName": "Yogeshwaran S",
+    "custWhatsApp": "7200451980",
+    "packageName": "Weekend Saturday Sunday Combo",
+    "planType": "Daily Plan",
+    "deliveryArea": "Guduvancherry",
+    "deliveryTimeSlot": "Afternoon Lunch (12:00 PM - 1:00 PM)",
+    "fullAddress": "Door no127 Narayanapuram Nandhivaram Guduvancherry",
+    "deliveryDate": "2026-11-26",
+    "specialNotes": "",
+    "status": "New Order Received",
+    "createdAt": "2026-11-25T07:34:45.241Z"
+  },
+  {
+    "orderId": "SLHF-498954",
+    "custName": "Yogeshwaran ",
+    "custWhatsApp": "7200451980",
+    "packageName": "Monthly Combo - Non-Veg (200 per day)",
+    "planType": "Daily Plan",
+    "deliveryArea": "Nearby Area",
+    "deliveryTimeSlot": "Morning Breakfast (7:30 AM - 8:30 AM)",
+    "fullAddress": "Plot no : 4 , Narayanapuram , Guduvancheri",
+    "deliveryDate": "2026-11-26",
+    "specialNotes": "For pregnant lady ",
+    "status": "New Order Received",
+    "createdAt": "2026-11-25T07:24:58.954Z"
+  },
+  {
+    "orderId": "SLHF-096309",
+    "custName": "Ydd",
+    "custWhatsApp": "6262656655",
+    "packageName": "Only Lunch",
+    "planType": "Daily Plan",
+    "deliveryArea": "Guduvancherry",
+    "deliveryTimeSlot": "Afternoon Lunch (12:00 PM - 1:00 PM)",
+    "fullAddress": "Dhdh",
+    "deliveryDate": "2026-11-26",
+    "specialNotes": "",
+    "status": "New Order Received",
+    "createdAt": "2026-11-25T05:04:56.314Z"
+  }
+]

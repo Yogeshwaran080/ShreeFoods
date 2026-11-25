@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" fill="none">
+  <defs>
+    <linearGradient id="kitchenBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="60%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <radialGradient id="potGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="45%" stop-color="#eab308"/>
+      <stop offset="85%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </radialGradient>
+    <linearGradient id="leafGradHero" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <filter id="heroDrop" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#064e3b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="760" height="520" rx="24" fill="url(#kitchenBg)" />
+
+  <!-- Traditional Decorative Kitchen Arch & Tiles -->
+  <path d="M 0 120 Q 380 70 760 120 L 760 0 L 0 0 Z" fill="#15803d" opacity="0.08"/>
+  <circle cx="380" cy="260" r="240" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Steaming Traditional Kitchen Counter / Table -->
+  <rect x="40" y="380" width="680" height="120" rx="16" fill="#1e293b"/>
+  <rect x="50" y="370" width="660" height="24" rx="8" fill="#334155"/>
+
+  <!-- Huge Fresh Green Banana Leaf Laid on Counter -->
+  <path d="M 120 385 C 240 375, 520 375, 640 385 C 650 415, 620 440, 500 445 C 340 450, 180 445, 110 415 Z" 
+        fill="url(#leafGradHero)" stroke="#86efac" stroke-width="2"/>
+  <!-- Leaf Center Spine -->
+  <path d="M 120 405 Q 380 410 640 405" stroke="#bbf7d0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Steaming Rice & South Indian Feast on the Leaf -->
+  <!-- Steaming White Ponni Rice Mound -->
+  <ellipse cx="280" cy="410" rx="42" ry="22" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <path d="M 270 395 Q 280 402 290 398" stroke="#eab308" stroke-width="8" stroke-linecap="round"/><!-- Ghee & Paruppu -->
+
+  <!-- Golden Sambar / Vatha Kulambu Bowl -->
+  <ellipse cx="380" cy="405" rx="28" ry="16" fill="#ea580c"/>
+  <ellipse cx="380" cy="403" rx="22" ry="12" fill="#c2410c"/>
+
+  <!-- Crispy Vadas & Appalam on Leaf -->
+  <ellipse cx="460" cy="408" rx="22" ry="16" fill="#d97706" stroke="#b45309" stroke-width="1"/>
+  <ellipse cx="460" cy="408" rx="7" ry="5" fill="#15803d"/>
+  <!-- Appalam -->
+  <ellipse cx="530" cy="405" rx="32" ry="20" fill="#fef08a" stroke="#d97706" stroke-width="1.5"/>
+  <ellipse cx="525" cy="402" rx="12" ry="6" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Traditional Brass Uruli / Pot on side -->
+  <ellipse cx="110" cy="430" rx="55" ry="24" fill="url(#potGrad)"/>
+  <path d="M 55 430 Q 110 475 165 430" fill="url(#potGrad)" stroke="#713f12" stroke-width="2"/>
+
+  <!-- Steam Whispers rising from food -->
+  <path d="M 280 380 Q 275 350 285 320" stroke="#94a3b8" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 380 375 Q 390 345 375 315" stroke="#94a3b8" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- ================= GROUP OF WOMEN CHEFS / HOMEMAKERS ================= -->
+  
+  <!-- LADY 1 (Left - Senior Master Cook, smiling with thumbs up) -->
+  <g transform="translate(130, 90)">
+    <!-- Hair bun & Jasmine flowers -->
+    <circle cx="90" cy="85" r="42" fill="#1c1917"/>
+    <path d="M 60 75 Q 90 60 120 75" stroke="#f8fafc" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Face -->
+    <ellipse cx="90" cy="115" rx="36" ry="40" fill="#fed7aa"/>
+    <!-- Red Bindi -->
+    <circle cx="90" cy="98" r="3.5" fill="#dc2626"/>
+    <!-- Smiling Eyes -->
+    <path d="M 75 108 Q 83 103 90 108" stroke="#451a03" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 98 108 Q 106 103 114 108" stroke="#451a03" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Cheerful Smile -->
+    <path d="M 80 128 Q 92 142 104 128" stroke="#991b1b" stroke-width="2.5" fill="#f87171"/>
+    
+    <!-- White Chef Apron with Green Trim -->
+    <path d="M 45 180 C 50 155, 80 150, 92 150 C 105 150, 135 155, 140 180 L 150 290 L 35 290 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 72 152 L 92 168 L 112 152 L 110 160 L 92 176 L 74 160 Z" fill="#16a34a"/>
+    <circle cx="92" cy="195" r="3.5" fill="#15803d"/>
+    <circle cx="92" cy="215" r="3.5" fill="#15803d"/>
+
+    <!-- Left Hand: Thumbs Up! -->
+    <g transform="translate(18, 160)">
+      <circle cx="16" cy="24" r="12" fill="#fed7aa"/>
+      <path d="M 14 20 C 12 8, 20 4, 24 10 C 26 14, 22 20, 18 22 Z" fill="#fed7aa" stroke="#ea580c" stroke-width="1"/>
+      <path d="M 8 22 C 6 24, 6 32, 12 34" stroke="#ea580c" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- LADY 2 (Center - Head Chef, holding a golden ladle, big radiant smile & Thumbs Up) -->
+  <g transform="translate(290, 60)">
+    <!-- Hair bun & Jasmine flowers -->
+    <circle cx="100" cy="80" r="46" fill="#0f172a"/>
+    <path d="M 68 70 Q 100 50 132 70" stroke="#f8fafc" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Face -->
+    <ellipse cx="100" cy="112" rx="40" ry="44" fill="#fde047" fill-opacity="0.4"/>
+    <ellipse cx="100" cy="112" rx="38" ry="42" fill="#fed7aa"/>
+    <!-- Red Bindi -->
+    <circle cx="100" cy="94" r="4.5" fill="#b91c1c"/>
+    <!-- Smiling Eyes -->
+    <path d="M 82 106 Q 91 100 100 106" stroke="#451a03" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 108 106 Q 117 100 126 106" stroke="#451a03" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="110" r="2" fill="#ffffff"/>
+    <circle cx="118" cy="110" r="2" fill="#ffffff"/>
+    <!-- Big Happy Homestyle Smile -->
+    <path d="M 86 128 Q 100 146 116 128" stroke="#991b1b" stroke-width="3" fill="#ef4444"/>
+    <path d="M 90 129 Q 100 136 112 129" stroke="#ffffff" stroke-width="2" fill="none"/>
+    
+    <!-- White Pristine Chef Coat with Green Collar -->
+    <path d="M 45 185 C 55 155, 85 150, 100 150 C 115 150, 145 155, 155 185 L 170 320 L 30 320 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M 78 152 L 100 174 L 122 152 L 118 162 L 100 182 L 82 162 Z" fill="#15803d"/>
+    <!-- Double Breasted Green Buttons -->
+    <circle cx="92" cy="200" r="4" fill="#16a34a"/>
+    <circle cx="108" cy="200" r="4" fill="#16a34a"/>
+    <circle cx="92" cy="225" r="4" fill="#16a34a"/>
+    <circle cx="108" cy="225" r="4" fill="#16a34a"/>
+    <circle cx="92" cy="250" r="4" fill="#16a34a"/>
+    <circle cx="108" cy="250" r="4" fill="#16a34a"/>
+
+    <!-- Right Hand: Energetic THUMBS UP! -->
+    <g transform="translate(150, 160)">
+      <circle cx="20" cy="24" r="14" fill="#fed7aa"/>
+      <!-- Upright thumb -->
+      <path d="M 18 20 C 16 6, 26 2, 30 8 C 32 14, 28 20, 22 24 Z" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>
+      <path d="M 24 5 Q 28 5 28 10" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Rest of folded fingers -->
+      <path d="M 12 24 C 10 27, 10 36, 18 38" stroke="#ea580c" stroke-width="2"/>
+      <path d="M 8 32 C 6 35, 8 42, 16 43" stroke="#ea580c" stroke-width="2"/>
+    </g>
+
+    <!-- Traditional Wooden/Brass Serving Ladle in Left Hand -->
+    <path d="M 25 240 L 40 180" stroke="#a16207" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="22" cy="245" rx="14" ry="9" fill="#eab308" stroke="#713f12" stroke-width="1.5"/>
+  </g>
+
+  <!-- LADY 3 (Right - Joyful Specialist, smiling with thumbs up) -->
+  <g transform="translate(470, 85)">
+    <!-- Hair bun & Jasmine flowers -->
+    <circle cx="90" cy="85" r="42" fill="#18181b"/>
+    <path d="M 60 75 Q 90 60 120 75" stroke="#f8fafc" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Face -->
+    <ellipse cx="90" cy="115" rx="36" ry="40" fill="#fed7aa"/>
+    <!-- Red Bindi -->
+    <circle cx="90" cy="98" r="3.5" fill="#dc2626"/>
+    <!-- Smiling Eyes -->
+    <path d="M 75 108 Q 83 103 90 108" stroke="#451a03" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 98 108 Q 106 103 114 108" stroke="#451a03" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Cheerful Smile -->
+    <path d="M 80 128 Q 92 142 104 128" stroke="#991b1b" stroke-width="2.5" fill="#f87171"/>
+    
+    <!-- White Chef Apron with Green Trim -->
+    <path d="M 45 180 C 50 155, 80 150, 92 150 C 105 150, 135 155, 140 180 L 150 290 L 35 290 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 72 152 L 92 168 L 112 152 L 110 160 L 92 176 L 74 160 Z" fill="#16a34a"/>
+    <circle cx="92" cy="195" r="3.5" fill="#15803d"/>
+    <circle cx="92" cy="215" r="3.5" fill="#15803d"/>
+
+    <!-- Right Hand: Thumbs Up! -->
+    <g transform="translate(135, 160)">
+      <circle cx="16" cy="24" r="12" fill="#fed7aa"/>
+      <path d="M 14 20 C 12 8, 20 4, 24 10 C 26 14, 22 20, 18 22 Z" fill="#fed7aa" stroke="#ea580c" stroke-width="1"/>
+      <path d="M 8 22 C 6 24, 6 32, 12 34" stroke="#ea580c" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Floating Trust Seal Badge in Top Corner -->
+  <g transform="translate(560, 30)" filter="url(#heroDrop)">
+    <rect width="170" height="60" rx="16" fill="#ffffff" stroke="#86efac" stroke-width="2"/>
+    <circle cx="34" cy="30" r="18" fill="#15803d"/>
+    <!-- Heart Icon inside circle -->
+    <path d="M 34 35 L 26 27 C 23 24 23 19 28 19 C 31 19 33 21 34 23 C 35 21 37 19 40 19 C 45 19 45 24 42 27 Z" fill="#ffffff"/>
+    <text x="64" y="26" font-family="'Poppins', sans-serif" font-size="12" font-weight="800" fill="#15803d">100% HOMESTYLE</text>
+    <text x="64" y="42" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#64748b">Cooked by Ammas</text>
+  </g>
+</svg>

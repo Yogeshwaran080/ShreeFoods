@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <!-- Crispy Golden Crust Gradient -->
+    <radialGradient id="vadaCrust" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="35%" stop-color="#d97706"/>
+      <stop offset="70%" stop-color="#b45309"/>
+      <stop offset="92%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </radialGradient>
+    <radialGradient id="holeDepth" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3e1a05" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#78350f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="vadaShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="10" stdDeviation="12" flood-color="#451a03" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#vadaShadow)">
+    <!-- Outer Crispy Ring with organic slight irregular fried puffiness -->
+    <path d="M 100 20 
+             C 142 19, 178 52, 180 98 
+             C 181 144, 148 180, 102 181 
+             C 56 182, 20 148, 19 101 
+             C 18 55, 54 21, 100 20 Z" 
+          fill="url(#vadaCrust)" />
+
+    <!-- Fried Crust Blisters & Highlights -->
+    <path d="M 60 45 C 80 32, 120 30, 140 46" stroke="#fde68a" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 148 65 C 165 90, 162 130, 140 152" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 40 110 C 38 135, 60 160, 90 165" stroke="#78350f" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Medu Vada Center Perforation (Hole) -->
+    <!-- Hole Inner Shadow & Opening -->
+    <ellipse cx="100" cy="101" rx="28" ry="28" fill="#ffffff" fill-opacity="0.05"/>
+    <ellipse cx="100" cy="100" rx="26" ry="25" fill="#f8fafc"/>
+    <ellipse cx="100" cy="100" rx="26" ry="25" fill="url(#holeDepth)"/>
+    <ellipse cx="98" cy="98" rx="22" ry="21" fill="#f1f5f9"/>
+
+    <!-- Pepper Corns, Cumin & Curry Leaf Flecks -->
+    <!-- Pepper 1 -->
+    <circle cx="68" cy="72" r="3.2" fill="#18181b"/>
+    <circle cx="67" cy="71" r="1" fill="#a1a1aa"/>
+    <!-- Pepper 2 -->
+    <circle cx="132" cy="85" r="3" fill="#18181b"/>
+    <!-- Pepper 3 -->
+    <circle cx="95" cy="148" r="3.5" fill="#18181b"/>
+    <!-- Cumin Seeds -->
+    <path d="M 125 125 Q 128 129 132 130" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 70 120 Q 73 125 76 126" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 115 52 Q 120 54 125 53" stroke="#78350f" stroke-width="2" stroke-linecap="round"/>
+    <!-- Curry Leaf Specks -->
+    <path d="M 75 58 C 77 55, 83 56, 85 60 C 83 62, 78 62, 75 58 Z" fill="#15803d"/>
+    <path d="M 142 110 C 144 107, 149 108, 150 112 C 148 114, 144 114, 142 110 Z" fill="#166534"/>
+    <path d="M 110 160 C 112 157, 118 158, 119 162 C 117 164, 113 164, 110 160 Z" fill="#15803d"/>
+
+    <!-- Crunchy Glaze Highlight -->
+    <ellipse cx="85" cy="50" rx="16" ry="7" transform="rotate(-20 85 50)" fill="#fef08a" opacity="0.35"/>
+  </g>
+</svg>
